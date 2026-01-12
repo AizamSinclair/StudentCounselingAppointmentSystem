@@ -4,6 +4,7 @@
 <%@ include file="headerCouns.jsp" %>
 
 <style>
+    
     body { background-color: #f4f7f6; font-family: 'Segoe UI', sans-serif; }
     .dashboard-content { padding: 20px; width: 95%; max-width: 1500px; margin: 20px auto; }
     
