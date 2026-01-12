@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" 
+    xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+
+    <display-name>Student Counselling Appointment System</display-name>
+
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>com.uitm.studentcounselling.AuthFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet><servlet-name>AuthServlet</servlet-name><servlet-class>com.uitm.studentcounselling.AuthServlet</servlet-class></servlet>
+    <servlet><servlet-name>EditProfileServlet</servlet-name><servlet-class>com.uitm.studentcounselling.EditProfileServlet</servlet-class></servlet>
+
+    <servlet><servlet-name>AdminDashboardServlet</servlet-name><servlet-class>com.uitm.studentcounselling.AdminDashboardServlet</servlet-class></servlet>
+    <servlet><servlet-name>CounselorDashboardServlet</servlet-name><servlet-class>com.uitm.studentcounselling.CounselorDashboardServlet</servlet-class></servlet>
+    <servlet><servlet-name>ManageAppointmentServlet</servlet-name><servlet-class>com.uitm.studentcounselling.ManageAppointmentServlet</servlet-class></servlet>
+    <servlet><servlet-name>ManageCounselorServlet</servlet-name><servlet-class>com.uitm.studentcounselling.ManageCounselorServlet</servlet-class></servlet>
+    <servlet><servlet-name>ManageStudentServlet</servlet-name><servlet-class>com.uitm.studentcounselling.ManageStudentServlet</servlet-class></servlet>
+    <servlet><servlet-name>StudentRecordServlet</servlet-name><servlet-class>com.uitm.studentcounselling.StudentRecordServlet</servlet-class></servlet>
+
+    <servlet><servlet-name>AddCounselorServlet</servlet-name><servlet-class>com.uitm.studentcounselling.AddCounselorServlet</servlet-class></servlet>
+    <servlet><servlet-name>EditCounselorServlet</servlet-name><servlet-class>com.uitm.studentcounselling.EditCounselorServlet</servlet-class></servlet>
+    <servlet><servlet-name>DeleteCounselorServlet</servlet-name><servlet-class>com.uitm.studentcounselling.DeleteCounselorServlet</servlet-class></servlet>
+
+    <servlet><servlet-name>BookAppointmentServlet</servlet-name><servlet-class>com.uitm.studentcounselling.BookAppointmentServlet</servlet-class></servlet>
+    <servlet><servlet-name>EditAppointmentServlet</servlet-name><servlet-class>com.uitm.studentcounselling.EditAppointmentServlet</servlet-class></servlet>
+    <servlet><servlet-name>CancelAppointmentServlet</servlet-name><servlet-class>com.uitm.studentcounselling.CancelAppointmentServlet</servlet-class></servlet>
+    <servlet><servlet-name>CheckSlotServlet</servlet-name><servlet-class>com.uitm.studentcounselling.CheckSlotServlet</servlet-class></servlet>
+    <servlet><servlet-name>CheckStatusServlet</servlet-name><servlet-class>com.uitm.studentcounselling.CheckStatusServlet</servlet-class></servlet>
+    <servlet><servlet-name>ViewAppointmentDetailsServlet</servlet-name><servlet-class>com.uitm.studentcounselling.ViewAppointmentDetailsServlet</servlet-class></servlet>
+    <servlet><servlet-name>FollowUpActionServlet</servlet-name><servlet-class>com.uitm.studentcounselling.FollowUpActionServlet</servlet-class></servlet>
+    <servlet><servlet-name>FollowUpAppointmentServlet</servlet-name><servlet-class>com.uitm.studentcounselling.FollowUpAppointmentServlet</servlet-class></servlet>
+    <servlet><servlet-name>EditStudentServlet</servlet-name><servlet-class>com.uitm.studentcounselling.EditStudentServlet</servlet-class></servlet>
+    <servlet><servlet-name>DeleteStudentServlet</servlet-name><servlet-class>com.uitm.studentcounselling.DeleteStudentServlet</servlet-class></servlet>
+    <servlet><servlet-name>AppointmentReportServlet</servlet-name><servlet-class>com.uitm.studentcounselling.AppointmentReportServlet</servlet-class></servlet>
+
+    <servlet-mapping><servlet-name>AuthServlet</servlet-name><url-pattern>/AuthServlet</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>AdminDashboardServlet</servlet-name><url-pattern>/adminDashboard</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>CounselorDashboardServlet</servlet-name><url-pattern>/counselorDashboard</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>EditProfileServlet</servlet-name><url-pattern>/editProfile</url-pattern></servlet-mapping>
+
+    <servlet-mapping><servlet-name>ManageAppointmentServlet</servlet-name><url-pattern>/manageAppointments</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>ManageCounselorServlet</servlet-name><url-pattern>/manageCounselor</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>ManageStudentServlet</servlet-name><url-pattern>/manageStudent</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>StudentRecordServlet</servlet-name><url-pattern>/studentRecords</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>ViewAppointmentDetailsServlet</servlet-name><url-pattern>/viewAppointmentDetails</url-pattern></servlet-mapping>
+
+    <servlet-mapping><servlet-name>AddCounselorServlet</servlet-name><url-pattern>/AddCounselorServlet</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>EditCounselorServlet</servlet-name><url-pattern>/EditCounselorServlet</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>DeleteCounselorServlet</servlet-name><url-pattern>/deleteCounselor</url-pattern></servlet-mapping>
+
+    <servlet-mapping><servlet-name>BookAppointmentServlet</servlet-name><url-pattern>/bookAppointment</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>EditAppointmentServlet</servlet-name><url-pattern>/EditAppointmentServlet</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>CancelAppointmentServlet</servlet-name><url-pattern>/CancelAppointmentServlet</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>CheckSlotServlet</servlet-name><url-pattern>/checkSlot</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>CheckStatusServlet</servlet-name><url-pattern>/checkStatus</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>FollowUpActionServlet</servlet-name><url-pattern>/FollowUpActionServlet</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>FollowUpAppointmentServlet</servlet-name><url-pattern>/followUpAppointment</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>EditStudentServlet</servlet-name><url-pattern>/editStudent</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>DeleteStudentServlet</servlet-name><url-pattern>/deleteStudent</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>AppointmentReportServlet</servlet-name><url-pattern>/appointmentReport</url-pattern></servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+</web-app>
