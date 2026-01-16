@@ -17,7 +17,6 @@
 %>
 
 <style>
-    /* CSS for Edit Profile page, consistent with your previous UI */
     .content-area {
         display: flex;
         flex-direction: column;
@@ -105,7 +104,6 @@
         resize: vertical;
     }
     
-    /* STYLING FOR READ-ONLY FIELDS */
     .form-row input[disabled],
     .form-row input[readonly] {
         background-color: #e9ecef; 
