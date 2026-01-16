@@ -105,11 +105,13 @@
         resize: vertical;
     }
     
+    /* STYLING FOR READ-ONLY FIELDS */
     .form-row input[disabled],
     .form-row input[readonly] {
         background-color: #e9ecef; 
         cursor: not-allowed;
         color: #6c757d;
+        border: 1px solid #ced4da;
     }
     
     .button-group {
@@ -186,18 +188,19 @@
         
         <div class="form-row">
             <label for="studentId">Student ID :</label>
-            <input type="text" id="studentId" value="<%= student.getStudentId() %>" readonly>
+            <input type="text" id="studentId" name="studentId" value="<%= student.getStudentId() %>" readonly>
         </div>
         
         <div class="form-row">
             <label for="studentEmail">Student Email :</label>
-            <input type="email" id="studentEmail" value="<%= student.getStudEmail() %>" readonly>
+            <input type="email" id="studentEmail" name="studentEmail" value="<%= student.getStudEmail() %>" readonly>
         </div>
         
+        <%-- Student Name changed to READONLY --%>
         <div class="form-row">
             <label for="studentName">Student Name :</label>
             <input type="text" id="studentName" name="studentName" 
-                     value="<%= student.getStudName() %>" required>
+                     value="<%= student.getStudName() %>" readonly>
         </div>
         
         <div class="form-row">
