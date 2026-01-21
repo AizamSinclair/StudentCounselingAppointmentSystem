@@ -3,6 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ include file="headerCouns.jsp" %>
 
+
 <style>
     
     body { background-color: #f4f7f6; font-family: 'Segoe UI', sans-serif; }
