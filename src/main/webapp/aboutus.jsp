@@ -94,7 +94,7 @@
     
     <div class="content-area">
         
-        <h1 class="about-title">About us</h1>
+        <h1 class="about-title">About Us</h1>
         
         <div class="graphic-section">
             <img src="images/aboutus.png" alt="Benefits of Counselling Graphic" class="about-graphic">
