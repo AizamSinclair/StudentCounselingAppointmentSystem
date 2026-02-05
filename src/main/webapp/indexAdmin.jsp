@@ -23,8 +23,8 @@
             box-sizing: border-box;
         }
         
-        .emblem-section { text-align: center; margin-bottom: 40px; }
-        .emblem-image { width: 320px; height: auto; }
+        .emblem-section { text-align: center; }
+        .emblem-image { width: 320px; height: auto; margin-top: -75px; }
 
         .summary-boxes {
             display: flex;
@@ -77,9 +77,33 @@
         .student-box { border-bottom: 8px solid #16a085; }   /* Teal */
         .report-box { border-bottom: 8px solid #E36C4B; }    /* Original Admin Orange */
         .all-time-box { border-bottom: 8px solid #f39c12; }  /* Yellow/Orange for Grand Total */
+        
+        .welcome-section {
+            text-align: center;
+            margin-top: 5px;
+            color: #333;
+        }
+
+        .welcome-section h1 {
+            font-size: 2.2em;
+            margin-top: 10px;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .welcome-section p {
+            font-size: 1.1em;
+            color: #666;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
+    
+    <div class="welcome-section">
+        <h1><u>Welcome to the Admin Dashboard</u></h1>
+    </div>
     
     <div class="dashboard-content">
         <div class="emblem-section">
