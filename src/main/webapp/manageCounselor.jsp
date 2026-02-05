@@ -25,7 +25,8 @@
             text-decoration: underline;
             font-weight: bold;
             text-align: center;
-            margin: 30px 0;
+            margin-top: -15px;
+            margin-bottom: 30px;
             font-size: 2.5rem;
         }
 

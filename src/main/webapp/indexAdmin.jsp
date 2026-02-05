@@ -86,6 +86,7 @@
 
         .welcome-section h1 {
             font-size: 2.2em;
+            font-weight: bold;
             margin-top: 10px;
             color: #000000;
             text-transform: uppercase;
